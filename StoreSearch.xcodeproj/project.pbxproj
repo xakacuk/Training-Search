@@ -16,6 +16,7 @@
 		7BD770691D5481AE00422F3B /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD770681D5481AE00422F3B /* SearchResultCell.swift */; };
 		7BD7706B1D54883E00422F3B /* NothingFoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BD7706A1D54883E00422F3B /* NothingFoundCell.xib */; };
 		7BD7706D1D58A27000422F3B /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BD7706C1D58A27000422F3B /* LoadingCell.xib */; };
+		7BD7706F1D59D2EB00422F3B /* UIImageView+DownloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD7706E1D59D2EB00422F3B /* UIImageView+DownloadImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		7BD770681D5481AE00422F3B /* SearchResultCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
 		7BD7706A1D54883E00422F3B /* NothingFoundCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NothingFoundCell.xib; sourceTree = "<group>"; };
 		7BD7706C1D58A27000422F3B /* LoadingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingCell.xib; sourceTree = "<group>"; };
+		7BD7706E1D59D2EB00422F3B /* UIImageView+DownloadImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+DownloadImage.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				7BD770361D531C2F00422F3B /* SearchViewController.swift */,
 				7BD7706A1D54883E00422F3B /* NothingFoundCell.xib */,
 				7BD7706C1D58A27000422F3B /* LoadingCell.xib */,
+				7BD7706E1D59D2EB00422F3B /* UIImageView+DownloadImage.swift */,
 			);
 			path = StoreSearch;
 			sourceTree = "<group>";
@@ -154,6 +157,7 @@
 				7BD770651D53433100422F3B /* SearchResult.swift in Sources */,
 				7BD770691D5481AE00422F3B /* SearchResultCell.swift in Sources */,
 				7BD770351D531C2F00422F3B /* AppDelegate.swift in Sources */,
+				7BD7706F1D59D2EB00422F3B /* UIImageView+DownloadImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
