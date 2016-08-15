@@ -1,4 +1,5 @@
 import Foundation
+import UIKit
 
 typealias SearchComplete = (Bool) -> Void
 
@@ -34,6 +35,7 @@ class Search {
   func performSearch(for text: String, category: Category, completion: SearchComplete) {
     if !text.isEmpty {
       dataTask?.cancel()
+      UIApplication.shared.isNetworkActivityIndicatorVisible = true
       
       state = .loading
       
@@ -64,8 +66,9 @@ class Search {
           }
           success = true
         }
-        
+
         DispatchQueue.main.async {
+          UIApplication.shared.isNetworkActivityIndicatorVisible = false
           completion(success)
         }
       })
