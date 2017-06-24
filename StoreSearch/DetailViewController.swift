@@ -2,8 +2,8 @@
 //  DetailViewController.swift
 //  StoreSearch
 //
-//  Created by Matthijs on 10/08/2016.
-//  Copyright © 2016 Razeware. All rights reserved.
+//  Created by Евгений Бейнар on 15.12.16.
+//  Copyright © 2016 Евгений Бейнар. All rights reserved.
 //
 
 import UIKit
@@ -103,7 +103,7 @@ class DetailViewController: UIViewController {
     let priceText: String
     if searchResult.price == 0 {
       priceText = NSLocalizedString("Free", comment: "Price: Free")
-    } else if let text = formatter.string(from: searchResult.price) {
+    } else if let text = formatter.string(from: searchResult.price as NSNumber) {
       priceText = text
     } else {
       priceText = ""
@@ -124,7 +124,7 @@ class DetailViewController: UIViewController {
     }
   }
   
-  override func prepare(for segue: UIStoryboardSegue, sender: AnyObject?){
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if segue.identifier == "ShowMenu" {
       let controller = segue.destination as! MenuViewController
       controller.delegate = self

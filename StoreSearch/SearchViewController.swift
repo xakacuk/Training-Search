@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  StoreSearch
 //
-//  Created by Matthijs on 04/08/2016.
-//  Copyright © 2016 Razeware. All rights reserved.
+//  Created by Евгений Бейнар on 9.12.16.
+//  Copyright © 2016 Евгений Бейнар. All rights reserved.
 //
 
 import UIKit
@@ -67,7 +67,7 @@ class SearchViewController: UIViewController {
     present(alert, animated: true, completion: nil)
   }
   
-  override func prepare(for segue: UIStoryboardSegue, sender: AnyObject?){
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if segue.identifier == "ShowDetail" {
       if case .results(let list) = search.state {
         let detailViewController = segue.destination as! DetailViewController

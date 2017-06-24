@@ -2,8 +2,8 @@
 //  LandscapeViewController.swift
 //  StoreSearch
 //
-//  Created by Matthijs on 15/08/2016.
-//  Copyright © 2016 Razeware. All rights reserved.
+//  Created by Евгений Бейнар on 20.12.16.
+//  Copyright © 2016 Евгений Бейнар. All rights reserved.
 //
 
 import UIKit
@@ -229,11 +229,11 @@ class LandscapeViewController: UIViewController {
     performSegue(withIdentifier: "ShowDetail", sender: sender)
   }
   
-  override func prepare(for segue: UIStoryboardSegue, sender: AnyObject?){
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if segue.identifier == "ShowDetail" {
       if case .results(let list) = search.state {
         let detailViewController = segue.destination as! DetailViewController
-        let searchResult = list[sender!.tag - 2000]
+        let searchResult = list[(sender as! UIButton).tag - 2000]
         detailViewController.searchResult = searchResult
         detailViewController.isPopUp = true        
       }

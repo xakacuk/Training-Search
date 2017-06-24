@@ -2,8 +2,8 @@
 //  MenuViewController.swift
 //  StoreSearch
 //
-//  Created by Matthijs on 16/08/2016.
-//  Copyright © 2016 Razeware. All rights reserved.
+//  Created by Евгений Бейнар on 21.12.16.
+//  Copyright © 2016 Евгений Бейнар. All rights reserved.
 //
 
 import UIKit

@@ -2,8 +2,8 @@
   InfoPlist.strings
   StoreSearch
 
-  Created by Matthijs on 15/08/2016.
-  Copyright © 2016 Razeware. All rights reserved.
+  Created by Евгений Бейнар on 20.12.16.
+  Copyright © 2016 Евгений Бейнар. All rights reserved.
 */
 
 CFBundleDisplayName = "StoreSearch";

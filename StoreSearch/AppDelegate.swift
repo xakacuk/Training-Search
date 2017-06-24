@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  StoreSearch
 //
-//  Created by Matthijs on 04/08/2016.
-//  Copyright © 2016 Razeware. All rights reserved.
+//  Created by Евгений Бейнар on 9.12.16.
+//  Copyright © 2016 Евгений Бейнар. All rights reserved.
 //
 
 import UIKit
@@ -36,7 +36,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     window!.tintColor = UIColor(red: 10/255, green: 80/255, blue: 80/255, alpha: 1)
   }
 
-  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     customizeAppearance()
     
     detailViewController.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem
